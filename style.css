@@ -1,0 +1,179 @@
+/*
+colour pallete hex codes:
+yellow - F6BD60
+green - 84A59D
+brightest pink - F28482
+middle pink - F5CAC3
+lightest - F7EDE2
+*/
+* {
+  box-sizing: border-box;
+}
+
+.top {
+ background-image: url("src/leaves2.jpg");
+ background-size: cover;
+}
+
+body{
+    margin: auto 0;
+    padding: 0;
+    background-color: #84A59D;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#111;
+}
+
+h1 {
+    color:#F7EDE2;
+}
+
+header{
+    background-color:#F7EDE2;
+    padding:20px;
+    border-radius: 30px;
+    text-align:center;
+    margin: 20px;
+}
+
+/*main{
+  background-color:#84A59D;
+}*/
+
+/*main:after{
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+footer{
+    background-color:#F7EDE2;
+    padding:20px;
+    border-radius: 30px;
+    margin: 20px;
+    clear: both; /*makes it so it is at bottom*/
+}
+
+#mainHeading {
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size:500%;
+   
+    border-color:#F7EDE2;
+    border-radius:50px;
+    border-style:solid;
+}
+
+.col-12 heading{
+  border-style:solid;
+  border-color:#F7EDE2;
+}
+
+.button-header {
+  align-items: center; /*aligns text in center*/
+  background: none;
+  border: none;
+  border-radius: 8px; /* makes rounded corners */
+  color:#111;
+  cursor: pointer;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 16px;
+  height: 35px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+}
+
+.button-header:after {
+  background-color: #F28482;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 35px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-header:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-header:active {
+  background-color: #F5CAC3;
+  outline: 0;
+}
+
+.button-header:hover {
+  outline: 0;
+}
+
+/*if 820px or larger, apply the following style*/
+@media (min-width: 1100px) {
+  .button-header {
+    padding: 0 40px;
+  }
+}
+
+p {
+    color:#111;
+}
+
+footer {
+  text-align:left;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+}
+
+#description{
+  text-align: center;
+  position:relative;
+  clear: both;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+  font-size:120%;
+  color:#F7EDE2;
+}
+
+/*Setting up a 12 column layout for the page*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*makes it so content in row class is still part of page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /*border: 1px solid black;*/
+}
+
+#date{
+  color:darkslategray;
+  font-size:small;
+  padding: 0;
+  margin: 0 auto;
+}
+

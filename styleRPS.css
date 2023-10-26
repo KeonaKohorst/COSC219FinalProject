@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family:impact;
+  }
+
+  h1{
+    font-size:400%;
+    margin: 0 auto;
+  }
+
+  body{
+    max-width:700px;
+    margin: 0 auto;
+    float: none;
+    background-color:#4D908E;
+    color:#023047;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid black;*/
+}
+
+button{
+    background: none;
+    border: none;
+    color:beige;
+    border-radius:60px;
+}
+
+/*makes it so hand pics fit in their container*/
+.hand{
+    max-width:80%;
+    object-fit:contain;
+}
+
+#uFist{
+    max-width:65%;
+}
+
+#cFist{
+    max-width:65%;
+}
+
+p{
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+}
+
+#fight{
+    text-align:center;
+    
+}
+
+#fightButton, #playAgainButton{
+    background-color:#277DA1;
+    width:50%;
+    font-size:300%;
+}
+
+.col-12 {
+    text-align: center;
+}
+
+div[name]{
+    background-color:#577590;
+}
+
+#vs p{
+    position: relative;
+    top: 30%;
+    font-size:400%;
+}
+
+
+.menu{
+    text-align:center;
+    font-size:200%;
+}
+
+button:active {
+    color:#F94144;
+}
+
+.active{
+    background-color:#F9844A;
+}
+
+.versus{
+    object-fit:contain;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.gone{
+    display: none;
+}
+
+.handsColumn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius:60px;
+}
+
+.result{
+    font-size:200%;
+}
+
+/*Header nav bar*/
+.button-header {
+    align-items: center; /*aligns text in center*/
+    background: none;
+    border: none;
+    border-radius: 8px; /* makes rounded corners */
+    color:beige;
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 35px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+  }
+  
+  .button-header:after {
+    background-color: #277DA1;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 35px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    /*transform: translate(3px, 3px);*/
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+
+  .nav{
+    margin: 10px;
+    text-align:center;
+  }
+  
+  .button-header:hover:after {
+    transform: translate(1px, 3px);
+  } 
+  
+  .button-header:active {
+    background-color: #F5CAC3;
+    outline: 0;
+  }
+  
+  .button-header:hover {
+    outline: 0;
+  }
+  
+  /*if 820px or larger, apply the following style*/
+  @media (min-width: 1100px) {
+    .button-header {
+      padding: 0 40px;
+    }
+  }
+

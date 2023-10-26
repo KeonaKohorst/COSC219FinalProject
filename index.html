@@ -1,0 +1,65 @@
+<!--
+Menu navigation plans:
+• Home​
+• Resume​
+• Form​
+• AJAX 
+• Jquery
+• something of choice - something from codecademy?
+something of choice - bootstrap?
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+            <header>
+                <button class="button-header" role="button" name="home" id="homeButton">Home</button>
+                <button class="button-header" role="button" name="resume" id="resumeButton">Resume</button>
+                <button class="button-header" role="button" name="Form" id="formButton">Form</button>
+                <button class="button-header" role="button" name="AJAX" id="ajaxButton">AJAX</button>
+                <button class="button-header" role="button" name="jquery" id="jqueryButton">Jquery</button>
+                <button class="button-header" role="button" name="rps" id="rpsButton">Rock Paper Scissors</button>
+                <button class="button-header" role="button"name="bootstrap" id="bootstrapButton">Bootstrap?</button>
+            </header>
+        <div class="top">
+            <main>
+                <div class="row">
+                    <div class="col-12 heading">
+                        <h1 id="mainHeading">Welcome to our Final Project for COSC 219</h1>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 description">
+                        <p id="description">This website is a demonstration of everything we have learned in this course!</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <table>
+                <tr><td>Authors:</td><td>Keona Gagnier</td></tr>
+                <tr><td></td><td>Yuri Shichinohe</td></tr>
+            </table>
+            <p id="date">Fall 2023</p>
+        </footer>
+    </body>
+    <script>
+        //make it so resume button opens up a PDF in new tab
+        let resumeButton = document.getElementById("resumeButton");
+        resumeButton.addEventListener("click", () => {
+            window.open("src/resume219.pdf");
+        });
+
+        let rpsButton = document.getElementById("rpsButton");
+        rpsButton.addEventListener("click", () => {
+            window.open("rockpaperscissors.html", '_self');
+        })
+    </script>
+</html>

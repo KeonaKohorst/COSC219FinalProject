@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="styleRPS.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <div class="nav">
+                <button class="button-header" role="button" name="home" id="homeButton">Home</button>
+                <button class="button-header" role="button" name="resume" id="resumeButton">Resume</button>
+                <button class="button-header" role="button" name="Form" id="formButton">Form</button>
+                <button class="button-header" role="button" name="AJAX" id="ajaxButton">AJAX</button>
+                <button class="button-header" role="button" name="jquery" id="jqueryButton">Jquery</button>
+                <button class="button-header" role="button" name="rps" id="rpsButton">Rock Paper Scissors</button>
+                <button class="button-header" role="button"name="bootstrap" id="bootstrapButton">Bootstrap?</button>
+            </div>
+            <h1>ROCK PAPER SCISSORS</h1>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-4 userHands handsColumn" name="userButtons">
+                    <!--Include buttons and p tag for winner/loser-->
+                    
+                    <button class="handButton" name="uRock" id="rockButton"><img class="hand" id="uFist" src="src/uRock.png"/></button>
+                    <button class="handButton" name="uPaper" id="paperButton"><img class="hand" src="src/uPaper.png"/></button>
+                    <button class="handButton" name="uScissors" id="scissorsButton"><img class="hand" src="src/uScissors.png"/></button>
+                    
+                    <p class="result" id="uResult"></p>
+                </div>
+                <div class="col-4" id="vs">
+                    <div class="versus">
+                        <div class="inner-row">
+                            <p id="uChoice" class="hidden">filler</p>
+                        </div>
+                        <div class="inner-row">
+                            <p>VS.</p>
+                        </div>
+                        <div class="inner-row">
+                            <p id="cChoice" class="hidden">filler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 computerHands handsColumn" name="compButtons">
+                    <!--Include buttons and p tag for winner/loser-->
+                    <button name="cRock" id="cRock"><img class="hand" id="cFist" src="src/cRock.png"/></button>
+                    <button name="cPaper" id="cPaper"><img class="hand" src="src/cPaper.png"/></button>
+                    <button name="cScissors" id="cScissors"><img class="hand" src="src/cScissors.png"/></button>
+                    
+                    <p class="result" id="cResult"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 fight" id="fight">
+                    <!--include fight button-->
+                    <button class="menu" name="fight" id="fightButton">SHOOT!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 playagain">
+                    <button class="menu hidden" name="playAgain" id="playAgainButton">play again</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="rps.js"></script>
+    </body>
+    
+    
+</html>
